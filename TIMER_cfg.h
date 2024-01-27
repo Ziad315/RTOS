@@ -1,0 +1,63 @@
+/*
+ * TIMER_cfg.h
+ *
+ *  Created on: 29 Dec 2023
+ *      Author: Ziad Yakoot
+ */
+
+#ifndef TIMER_CFG_H_
+#define TIMER_CFG_H_
+
+/*
+ * choose from following:
+ * 1)WAV_GEN_MODE_NORMAL
+   2)WAV_GEN_MODE_PWM_PHASE
+   3)WAV_GEN_MODE_CTC
+   4)WAV_GEN_MODE_PWM_FAST
+ */
+#define WAV_GEN_MODE           WAV_GEN_MODE_NORMAL
+
+/*
+ * choose from following:
+ *1)COM_OUTPUT_NO_PWM_NORMAL
+  2)COM_OUTPUT_NO_PWM_TOG_OC0
+  3)COM_OUTPUT_NO_PWM_CLR_OC0
+  4)COM_OUTPUT_NO_PWM_SET_OC0
+ */
+#define COM_OUTPUT_NO_PWM      COM_OUTPUT_NO_PWM_NORMAL
+/*
+ * Choose from following:
+ * 1) COM_OUTPUT_FAST_NORMAL
+   2) COM_OUTPUT_FAST_CLR_OC0
+   3) COM_OUTPUT_FAST_SET_OC0
+ */
+#define COM_OUTPUT_FAST        COM_OUTPUT_FAST_NORMAL
+
+/*
+ * chooose from following:
+ * 1) COM_OUTPUT_PHASE_NORMAL
+   2) COM_OUTPUT_PHASE_CLR_OC0
+   3) COM_OUTPUT_PHASE_SET_OC0
+ */
+#define COM_OUTPUT_PHASE       COM_OUTPUT_PHASE_NORMAL
+
+/*
+ * choose from following:
+ * 1)CLOCK_SELECT_NO_CLOCK
+   2) CLOCK_SELECT_NO_PRESCALE
+   3) CLOCK_SELECT_8_PRESCALE
+   4) CLOCK_SELECT_64_PRESCALE
+   5) CLOCK_SELECT_256_PRESCALE
+   6) CLOCK_SELECT_1024_PRESCALE
+   7) CLOCK_SELECT_EXT_FALLING_EDGE
+   8) CLOCK_SELECT_EXT_RISING_EDGE
+ */
+#define CLOCK_SELECT           CLOCK_SELECT_64_PRESCALE
+
+
+
+#define TIMER0_PRELOAD_VAL              250
+#define TIMER0_OVERFLOW_INTERRUPT       ENABLE
+#define TIMER0_CTC_VAL                  150
+
+#endif /* TIMER_CFG_H_ */
